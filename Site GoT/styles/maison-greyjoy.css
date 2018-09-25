@@ -1,0 +1,46 @@
+/*Reset CSS*/
+*{padding: 0;margin: 0; text-align: center; z-index: 2;}
+img{max-width: 100%;}
+body {font-size:12px; font-family:Verdana; background: rgb(131,131, 133);}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+header{ position: fixed; margin-top: 40px; width: 100%; float: top;}
+
+
+#menu { width: 98%; max-width: 1000px; margin: auto; background-color: rgba(255, 255, 255, 0.3); height: 50px; text-align: left;}
+
+
+#blason {top: -35px; position: absolute; max-width: 150px;}
+
+
+.box_diapo{background: black;}
+.diapo {position: absolute; top: 0px; left: 0px; width: 100%; display: none; z-index: 1;}
+
+
+#haut_de_contenu {width: 98%; max-width: 1000px; margin: auto;}
+#haut_de_contenu img{ width: 11.11%; float: left; margin-top: 20px; margin-bottom: 20px; }
+
+
+
+
+#contenu {width: 98%; max-width: 1000px;margin: auto;}
+h2 {color:rgb(214,201,21); padding-bottom: 20px;padding: 12px;}
+div>a {display: block;}
+#text_contenu {padding-bottom: 30px; text-align: justify;color: white; }
+
+
+
+footer {width: 98%; max-width: 1000px;margin: auto;height: 30px; max-height: 50px;padding-top: 10px; background:rgb(214,201,21);}
+.pdp {color: black;}
+
+
+
+
+
+
+
+
+
+
+

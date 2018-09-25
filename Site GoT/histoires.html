@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./styles/histoires.css">
+	<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="scripts/general.js"></script>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Lemonada');
+	</style> 
+</head>
+
+
+<body>
+	<header>
+		<div id="menu">
+			<img id="blason" src="./medias/blason-lannister.png" alt="blason" title="got">
+			<nav>
+				<ul>
+					<li><a href="general.html">acceuil</a></li>
+					<li><a href="Profil.html">profil</a></li>
+					<li><a href="familles-got.html">familles</a>
+						<ul>								
+							<li><a href="maison-arryn.html">Arryn</a></li>
+							<li><a href="maison-baratheon.html">Baratheon</a></li>
+							<li><a href="maison-greyjoy.html">Greyjoy</a></li>
+							<li><a href="maison-martell.html">Martell</a></li>
+							<li><a href="maison-lanister.html">Lanister</a></li>
+							<li><a href="maison-sark.html">Stark</a></li>
+							<li><a href="maison-targaryen.html">Targaryen</a></li>
+							<li><a href="maison-tully.html">Tully</a></li>
+							<li><a href="maison-tyrell.html">Tyrell</a></li>
+						</ul>
+					</li>
+					<li><a href="histoires.html">votre histoire</a></li>
+					<li><a href="blog.html">blog</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="box_diapo">
+		<img class="diapo" src="./medias/54023.jpg">
+		<img class="diapo" src="./medias/gameofthrones15_46.jpg">
+		<img class="diapo" src="./medias/GreatSeptExteriors.jpg">
+		<img class="diapo" src="./medias/kings-landing.jpg">
+		<img class="diapo" src="./medias/RODEO2.jpg">
+		<img class="diapo" src="./medias/The_Wall_from_the_south.jpg">
+		<img class="diapo" src="./medias/Titan_of_Braavos.jpg">
+	</div>
+	<div id="haut_de_contenu">
+		<img src="./medias/blason-arryn.png">
+		<img src="./medias/blason-baratheon.png">
+		<img src="./medias/blason-garde-de-nuit.png">
+		<img src="./medias/blason-greyjoy.png">
+		<img src="./medias/blason-tyrell.png">
+		<img src="./medias/blason-martell.png">
+		<img src="./medias/blason-stark.png">
+		<img src="./medias/blason-targaryen.png">
+		<img src="./medias/blason-lannister.png">
+	</div>
+	<hr class="clear">
+	<form>
+		<fieldset>
+			<div>
+				<h1>État civil</h1>
+				<h2>Civilité</h2>
+				<label>Madame
+				<input type="radio" name="radio1" value="radio1">
+				</label>
+				<label>Monsieur
+				<input type="radio" name="radio1" value="radio2">
+				</label>
+				<br><label>Prénom<br></label>
+				<input type="text" name="Prénom">
+				<br><label>Nom</label><br>
+				<input type="text" name="Nom">
+			</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<h1>Coordonées</h1>
+				<br><label>Adresse</label><br>
+				<input type="text" name="Adresse">
+				<br><label>Code Postal</label><br>
+				<input type="text" name="Code postal">
+				<br><label>Ville</label><br>
+				<input type="text" name="Ville">
+				<br><label>Email</label><br>
+				<input type="text" name="Email">
+			</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<h1>Préférences</h1>
+				<label>De quelle famille vous voudriez être :</label><br>
+				<select name="[familles]" size="3">
+					<option>Arryn</option>
+					<option>Bratheon</option>
+					<option>Greyjoy</option>
+					<option>Martell</option>
+					<option>Lanister</option>
+					<option>Stark</option>
+					<option>Targaryen</option>
+					<option>Tully</option>
+					<option>Tyrell</option>
+				</select><br>
+				<label>Quels sont vos préférences musicales</label><br>
+				<textarea name="textarea"></textarea>
+			</div>
+		</fieldset>
+		<input type="reset" name="annuler" value="effacer">
+		<input type="submit" name="envoi" value="Envoyer">
+	</form>
+	<footer>
+		<p class="pdp">Réalisé par 
+			 	<a href="mailto:valentin.marcel35@gmail.com">MARCEL Valentin</a> - 
+			 	<a href="mentions-légales.html">Mention légales</a>
+			 	<a>- Copyright © DUT R&T 1ere année Fi Groupe 1</a>
+		</p>
+	</footer>
+</body>
