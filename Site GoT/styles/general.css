@@ -1,7 +1,7 @@
 /*Reset CSS*/
 *{padding: 0;margin: 0; text-align: center; z-index: 2;}
 img{max-width: 100%;}
-body {font-size:12px; font-family:Verdana;}
+body {font-size:12px; font-family:Verdana; background: rgb(131,131, 133);}
 ul {list-style: none;}
 a {text-decoration: none;}
 
@@ -49,7 +49,7 @@ div>p {text-align: left; color: rgb(231, 47, 47); position: relative;display: bl
 .text_sous_image {text-align: left; color: white;padding-top: 35px}
 
 footer {width: 98%; max-width: 1000px;margin: auto;height: 30px; max-height: 50px;padding-top: 10px; background:rgb(231, 47, 47);}
-.pdp {color: white;}
+.pdp {color: grey;}
 
 @media screen and (max-width: 400px){
 	nav ul li {display: block; width: 100%;}

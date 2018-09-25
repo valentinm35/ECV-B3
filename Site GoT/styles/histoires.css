@@ -1,7 +1,7 @@
 /*Reset CSS*/
 *{padding: 0;margin: 0; text-align: center; z-index: 2;}
 img{max-width: 100%;}
-body {font-size:12px; font-family:Verdana;}
+body {font-size:12px; font-family:Verdana; background: rgb(131,131, 133);}
 ul {list-style: none;}
 a {text-decoration: none;}
 
