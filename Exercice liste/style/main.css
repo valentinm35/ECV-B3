@@ -12,8 +12,15 @@ div{
   border: 1px solid #f1f7fe;
   background-color: #eff6fd;
   padding: 20px;
+  padding-left: 50px;
   padding-top: 5px;
   margin-bottom: 25px;
   margin-top: 25px;
   border-radius: 20px;
+}
+img {
+  height: 50px;
+  float: right;
+  margin-top: auto;
+  margin-right: 70px;
 }
