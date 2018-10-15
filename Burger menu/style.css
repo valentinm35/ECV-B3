@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2em;
+  color: white;
+  overflow-x: hidden;
+  font-family: verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+.burger {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+nav {
+  background-color: lightgrey;
+  width: 25vw;
+  height: 100vh;
+  transform: translateX(30vw);
+  transition: transform 700ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+nav.visible{
+  transform: translateX(0);
+}
+.home, .about, .projects{
+    transform: translateX(70vw);
+}
+nav.visible .home{
+    transform: translateX(0);
+    transition: ease 1.5s;
+}
+nav.visible .about{
+    transform: translateX(0);
+    transition: ease 2s;
+}
+nav.visible .projects{
+    transform: translateX(0);
+    transition: ease 2.5s;
+}
+.menu{
+    position: absolute;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu .line-wrapp{
+	width: 40;
+	height: 40px;
+}
+.menu .line{
+	width: 40px;
+	height: 5px;
+	background-color: black;
+  margin: 7px 0;
+  transition: transform 700ms;
+}
+.menu.active .line.top{
+	transform: translateX(0px) translateY(6px) rotate(45deg);
+  transition: transform 700ms;
+}
+.menu.active .line.middle{
+	transform: translateX(0px) translateY(-6px) rotate(-45deg);
+  transition: transform 700ms;
+}
+.menu.active .line.bottom{
+  opacity: 0;
+  transition: transform 700ms;
+}

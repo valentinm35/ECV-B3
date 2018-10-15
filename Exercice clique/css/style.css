@@ -1,0 +1,17 @@
+body {
+  height: 200vh;
+}
+.scrolled {
+  position: fixed;
+}
+
+.scrolled .logo{
+  display: none;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
