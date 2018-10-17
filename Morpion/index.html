@@ -4,9 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="burger.png">
+        <link rel="shortcut icon" href="tictactoe.png">
+        <header>
+          <h1>Tic Tac Toe</h1>
+        </header>
     </head>
     <body>
+      <p class="J1">Joueur 1 : </p>
+      <img src="cross.png" class="crossJ1">
+      <p class="J2">Joueur 2 : </p>
+      <img src="circle.png" class='circleJ2'>
       <div class="morpion">
         <div class="row">
           <div class="cell" data-cell=1></div>
@@ -23,6 +30,7 @@
           <div class="cell" data-cell=8></div>
           <div class="cell" data-cell=9></div>
         </div>
+        <input type="button" class="button" onclick='window.location.reload(false)' value="Rejouer"/>
     <script src="main.js"></script>
     </body>
 </html>

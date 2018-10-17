@@ -1,6 +1,8 @@
 var tourDuJoueur1 = true;
 var partieGagnee = false;
 var cells = document.querySelectorAll('.cell');
+var i=0;
+
 
 var afficherSymbole = function(cell) {
 	// a remplir
@@ -8,25 +10,29 @@ var afficherSymbole = function(cell) {
 	if (cell.textContent === '') {
 		// 2 - poser symbole J1 ou j2
 		if (tourDuJoueur1) {
-			cell.textContent = 'X';
+			cell.textContent = ' ';
+			cell.classList.add('cross');
+			i++;
 		} else {
-			cell.textContent = 'O';
+			cell.textContent = ' ';
+			cell.classList.add('circle');
+			i++;
 		}
 		// 4 - changer le joueur courant
 		tourDuJoueur1 = !tourDuJoueur1;
 	}
 };
-
-var combinaisons = [[0, 1, 2], [3, 4, 5], [6, 7, 8]];
+var combinaisons = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0,3,6], [1,4,7], [2,5,8], [0,4,8],[2,4,6]];
 
 var verifierCombinaisons = function() {
 	// a remplir
 	// 3 - check combinaison gagnante
 	combinaisons.forEach(function(combinaison) {
+		console.log(i);
 		if (
-			cells[combinaison[0]].textContent === cells[combinaison[1]].textContent &&
-			cells[combinaison[1]].textContent === cells[combinaison[2]].textContent &&
-			cells[combinaison[0]].textContent !== ''
+			cells[combinaison[0]].classList[1] === cells[combinaison[1]].classList[1] &&
+			cells[combinaison[1]].classList[1] === cells[combinaison[2]].classList[1] &&
+			cells[combinaison[0]].classList[1] !== undefined
 		) {
 			console.log('WIN');
 			var currentPlayer;
@@ -35,11 +41,20 @@ var verifierCombinaisons = function() {
 			} else {
 				currentPlayer = 'joueur 1';
 			}
-			alert('Bravo ' + currentPlayer + '!');
+			alert('Bravo ' + currentPlayer + ' !');
 			partieGagnee = true;
+			// location.reload() ;
+
+		}
+		if (i===9 && cells[combinaison[0]].classList[1] !== undefined) {
+		 alert('Egalité !');
+		 i=0;
+		 // location.reload() ;
 		}
 	});
+
 };
+
 
 cells.forEach(function(cell) {
 	cell.addEventListener('click', function() {
