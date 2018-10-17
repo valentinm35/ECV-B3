@@ -12,7 +12,8 @@ h1{
   display: block;
   position: absolute;
   top: 15px;
-  left: 44%;
+  left: auto;
+  margin-left: 11%;
 }
 
 .J1{
@@ -33,6 +34,8 @@ h1{
   height: 500px;
   display: flex;
   flex-direction: column;
+  border: 4px solid #629acc;
+  border-radius: 10px;
 }
 
 .row{
@@ -42,8 +45,7 @@ h1{
 
 .cell {
   flex: 1;
-  border: 1px solid black;
-  border-style:dotted;
+  border: 4px solid #629acc;
 }
 
 .circle{
@@ -79,7 +81,6 @@ h1{
   padding: 20px;
   width: 200px;
   text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;

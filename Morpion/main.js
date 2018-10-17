@@ -2,6 +2,8 @@ var tourDuJoueur1 = true;
 var partieGagnee = false;
 var cells = document.querySelectorAll('.cell');
 var i=0;
+var h1 = document.getElementById("titre");
+var body = document.getElementById("corps");
 
 
 var afficherSymbole = function(cell) {
@@ -41,18 +43,21 @@ var verifierCombinaisons = function() {
 			} else {
 				currentPlayer = 'joueur 1';
 			}
-			alert('Bravo ' + currentPlayer + ' !');
+			// alert('Bravo ' + currentPlayer + ' !');
 			partieGagnee = true;
 			// location.reload() ;
-
+			document.getElementById('titre').innerHTML = ('Victoire du ' + currentPlayer + ' !');
+			h1.style.marginLeft = "7%";
+			body.style.backgroundColor = "#b8ffb8";
 		}
 		if (i===9 && cells[combinaison[0]].classList[1] !== undefined) {
-		 alert('Egalité !');
+			document.getElementById('titre').innerHTML = 'Égalité !';
+			h1.style.marginLeft = "13%";
+			body.style.backgroundColor = "#ffaaaa";
 		 i=0;
 		 // location.reload() ;
 		}
 	});
-
 };
 
 

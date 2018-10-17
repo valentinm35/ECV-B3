@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="tictactoe.png">
         <header>
-          <h1>Tic Tac Toe</h1>
+          <h1 id="titre">Tic Tac Toe</h1>
         </header>
     </head>
-    <body>
+    <body id="corps">
       <p class="J1">Joueur 1 : </p>
       <img src="cross.png" class="crossJ1">
       <p class="J2">Joueur 2 : </p>
@@ -30,6 +30,8 @@
           <div class="cell" data-cell=8></div>
           <div class="cell" data-cell=9></div>
         </div>
+      </div>
+      <p class="victoire"></p>
         <input type="button" class="button" onclick='window.location.reload(false)' value="Rejouer"/>
     <script src="main.js"></script>
     </body>
